@@ -30,7 +30,7 @@
         <h2>Reviews</h2>
         <hr />
         <ul class="list-group">
-          {% for review in template_data.reviews|exclude_reported:user %}
+          {% for review in template_data.reviews|exclude_reported_any %}
           <li class="list-group-item pb-3 pt-3">
             <h5 class="card-title">
               Review by {{ review.user.username }}
